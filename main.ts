@@ -1,3 +1,23 @@
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    Projectile2 = sprites.createProjectileFromSprite(img`
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . b . . . . . . . 
+        . . . . . . . b d b . . . . . . 
+        . . . . . . . c d c . . . . . . 
+        . . . . . . . c 5 c . . . . . . 
+        . . . . . . c d 5 d c . . . . . 
+        . . . b c c d 5 5 5 d c c b . . 
+        . . b d d 5 5 5 5 5 5 5 d d b . 
+        . . . b c c d 5 5 5 d c c b . . 
+        . . . . . . c d 5 d c . . . . . 
+        . . . . . . . c 5 c . . . . . . 
+        . . . . . . . c d c . . . . . . 
+        . . . . . . . b d b . . . . . . 
+        . . . . . . . . b . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        `, mySprite, 0, -50)
+})
 controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
     Projectile2 = sprites.createProjectileFromSprite(img`
         . . . . . . . . . . . . . . . . 
