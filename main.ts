@@ -90,22 +90,30 @@ controller.moveSprite(mySprite)
 mySprite.setStayInScreen(true)
 game.onUpdateInterval(500, function () {
     mySprite2 = sprites.create(img`
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . c c c c . . . 
-        . . . . . . . c c d d d d c . . 
-        . . . . . c c c c c c d d c . . 
-        . . . c c c 4 4 4 4 d c c c c c 
-        . . c 4 4 1 4 4 4 4 4 1 c c 4 f 
-        . c 4 4 4 4 1 4 4 4 4 d 1 f 4 f 
-        f 4 4 4 4 4 1 4 4 4 4 4 1 f 4 f 
-        f 4 4 f 4 4 1 4 c f 4 4 1 4 4 f 
-        f 4 4 4 4 4 1 c 4 f 4 4 1 f f f 
-        . f 4 4 4 4 1 4 4 f 4 4 d f . . 
-        . . f 4 4 1 4 c c 4 4 d f . . . 
-        . . . f d 4 4 4 4 4 4 c f . . . 
-        . . . . f f 4 4 4 4 c d b c . . 
-        . . . . . . f f f f d d d c . . 
-        . . . . . . . . . . c c c . . . 
+        ................
+        ..........b.....
+        ..........cb....
+        .......c..cbc...
+        ......cc...cdc..
+        .....cb....cbdc.
+        .....fc....cbdc.
+        .....fcc..ccbdc.
+        .....fccffcdbdc.
+        ......fffddbddc.
+        ...cc.fcdbbddc..
+        ..cb..cdbdddb...
+        ..fc..bbddbc....
+        ..fbccbddcc..bb.
+        ..fcbbddccccbbf.
+        ...fcddbccdddf..
+        ....fddbbffff...
+        ....fddbbf......
+        ....fdddbccc....
+        ..fffdbddbbbc...
+        .ffbbdbbdccbbf..
+        .fccffffddccfff.
+        .......ffddf....
+        .........ccf....
         `, SpriteKind.Enemy)
     mySprite2.setPosition(randint(0, 160), 0)
     mySprite2.setVelocity(0, 50)
